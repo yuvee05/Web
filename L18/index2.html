@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 1px solid black;
+            font-size: 100px;
+        }
+        .container{
+            font-size: 10px;
+        }
+        .box2{
+            font-size: 10em;
+            /* iss case me size 100 px ho jayega kyuki parent
+            tag(jo yaha 10 px h) ka 10 times hoyega */
+        }
+        .firstpara{
+            border: 1px solid black;
+            font-size: 5rem;
+            /* by default jo html tag carry krr rha h 
+            size uska 5 times ho jayega, so 16*5 = 80px */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Welcome to our website
+    </div>
+    <div class="container">
+        <div class="box2">
+            Welcome Welcome
+        </div>
+    </div>
+    <p class="firstpara">
+        Hello jee
+    </p>
+    
+</body>
+</html>

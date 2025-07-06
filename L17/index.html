@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 5000px;
+            background-color: beige;
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        /* by default position static hoti h jispe koi top bottom left right tag ni lgta */
+        .img2{
+            position: relative;
+            top: 100px;
+            left: 100px;
+            /* isme current position ke relative move krte h */
+            /* despite movement apna gap maintain rehne wla h */
+        }
+        .img3{
+            position: absolute;
+            top: 90px;
+            /* isme gap ni maintain hota */
+            /* tbhi overlapping */
+        }
+        .img1{
+            position: sticky;
+            top: 10px;
+            /* ye jb tkk apne parent tag me h tbb tkk hi fix rhega */
+        }
+        .img5{
+            position: fixed;
+            /* Ye throughout the page fixed rhega */
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img src="Screenshot 2025-06-17 223602.png" 
+        alt="ss1" 
+        width="300px" 
+        height="300px"
+        class="img1">
+
+        <img src="Screenshot 2025-06-22 201110.png" 
+        alt="ss2" 
+        width="300px" 
+        height="300px"
+        class="img2">
+
+        <img src="Screenshot 2025-06-22 202659.png" 
+        alt="ss3" 
+        width="300px" 
+        height="300px"
+        class="img3">
+
+        <img src="Screenshot 2025-06-22 234122.png" 
+        alt="ss4" 
+        width="300px" 
+        height="300px"
+        class="img4">
+
+        <img src="Screenshot 2025-06-22 234745.png" 
+        alt="ss5" 
+        width="300px" 
+        height="300px"
+        class="img5">
+
+        
+
+    </div>
+    <div class="box"></div>
+</body>
+</html>

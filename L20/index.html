@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+        }
+        .container1{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            /* flex-direction:row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+        }
+        .container2{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap-reverse;
+        }
+        .container3{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            /* flex-wrap: wrap-reverse; */
+            height: 500px;
+            justify-content: center;
+            /* Horizontal ka center kyuki flex direction row h */
+        }
+        .container4{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            /* flex-wrap: wrap-reverse; */
+            height: 500px;
+            justify-content: space-between;
+            /* saari space equal */
+        }
+        .container5{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            /* flex-wrap: wrap-reverse; */
+            height: 500px;
+            justify-content: space-around;
+            /* Hrr box ke aage piche equal space */
+        }
+        .container6{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            /* flex-wrap: wrap-reverse; */
+            height: 500px;
+            justify-content: space-evenly;
+            /* saari space equal */
+        }
+        .container7{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:column;
+            /* flex-wrap: wrap-reverse; */
+            justify-content: center;
+            height: 2000px;
+            /* Vertical ka center kyuki flex direction column h */
+        }
+        .container8{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            height: 1200px;
+            align-items: center;
+            /* Ye cross axis ke liye operate krta h */
+        }
+        .container9{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            height: 1200px;
+            align-items: stretch;
+            /* iske liye pehle box ki height htao */
+            /* by default bhi strtch hi hota h agrr height na do ho box ki */
+        }
+        .container10{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            height: 1200px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container11{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            height: 1200px;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+        }
+        .container12{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            height: 1200px;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+            align-content: start;
+        }
+        .container13{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container1">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container2">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+     <br><br><br><br><br>
+    <div class="container3">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+     <br><br><br><br><br>
+    <div class="container4">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+     <br><br><br><br><br>
+    <div class="container5">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+     <br><br><br><br><br>
+    <div class="container6">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+     <br><br><br><br><br>
+    <div class="container7">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container8">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container9">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container10">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container11">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container12">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="container13">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

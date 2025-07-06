@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: blue;
+        }
+        /* universal selector */
+        h1{
+            background-color: aquamarine;
+            /* border-style: solid;
+            border-width: 2px;
+            border-color: brown; */
+            border: solid black 5px  ;
+    
+            border-radius: 5px;
+            /* isse saare corner rounded honge */
+            width: 200px;
+            height: 70px;
+            text-align: center;
+        }
+        /* h2{
+            border: solid brown 15px;
+            border-top-left-radius: 25px;
+        }
+        h3{
+            border-top: solid yellow 15px;
+            border-right: solid brown 15px;
+        } */
+        .firstpara{
+            background-color: blanchedalmond;
+            border: solid black 3px  ;
+            width: 200px;
+            border-radius: 5px;
+            padding: 50px;
+            margin: 60px;
+            box-sizing: content-box;
+            /* by default yahi hoti h */
+            /* content box me ye hota hai ki jo width di hai vo siraf text ki maani jaati hai
+            aur baaki padding wagara algg se add hoti h */
+        }
+        .secondpara{
+            background-color: beige;
+            border: solid black 3px  ;
+            width: 200px;
+            border-radius: 5px;
+            padding-top: 60px;
+            padding-right: 40px;
+            box-sizing: border-box;
+            /* border box me but total width mila ke 200 hogi(Jo di hai yaha width) */
+        }
+        .thirdpara{
+            background-color: yellow;
+            border: solid black 3px ;
+            width: 200px;
+            border-radius: 5px;
+        }
+        span{
+            background-color: aquamarine;
+            border: solid black 3px  ;
+            border-radius: 5px;
+            width: 200px;
+        }
+        /* Height and width doesn't apply to a span tag bcoz tags like span, a are themselves
+        inline tags and do not create a box like these other tags */
+    </style>
+</head>
+<body>
+    
+    <h1>WELCOME</h1>
+    
+    <span>Welcome to our website</span>
+    
+    <!-- <h2>Welcome</h2>
+    
+    <h3>WELCOME</h3> -->
+    
+    <p class="firstpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quis repellat. Nobis pariatur alias explicabo, voluptate quibusdam voluptatem quidem omnis?</p>
+    
+    <p class="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, mollitia blanditiis. Pariatur iusto autem provident sapiente laudantium quaerat explicabo iste vero, aliquid, aperiam sunt reiciendis eius quo et! Esse, placeat!</p>
+    
+    <p class="thirdpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, expedita corporis? Deserunt sapiente impedit iste sit, iure doloremque itaque quaerat, est vitae exercitationem nesciunt unde similique ullam reprehenderit illum! Sed debitis sequi quod, esse libero molestias magni fuga atque vero voluptatum autem est neque iure vitae dicta! Vel, iste harum.</p>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+    <form>
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" id="name">
+    <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email">
+    <br>
+    <label for="phone">Phone:</label>
+    <br>
+    <input type="tel" id="phone">
+    <br>
+    <label for="resume">Resume:</label>
+    <br>
+    <input type="file" id="resume">
+    <br>
+    <label for="experience">Experience(years):</label>
+    <br>
+    <input type="number" name="counter" id="experience" min="0" max="50">
+    <br>
+    <fieldset>
+        <legend>Skills:</legend>
+        <input type="checkbox" id="html">
+         <br>
+         <label for="html">HTML</label>
+         <br><br>
+         <input type="checkbox" id="css">
+         <br>
+         <label for="css">CSS</label>
+         <br><br>
+         <input type="checkbox" id="js">
+         <br>
+         <label for="js">JavaScript</label>
+    </fieldset>
+    <label for="education">Highest Education:</label>
+    <br>
+    <select name="education" id="education">
+    <option value="high school">High School</option>
+    <option value="associates">Associate's Degree</option>
+    <option value="bachelors">Bachelor's Degree</option>
+    <option value="masters">Master's Degree</option>
+    <option value="phd">PhD</option>
+    </select>
+    <br>
+    <label>Availability:</label>
+    <br>
+    <br>
+    <input type="radio" id="full time" name="availability">
+    <br>
+    <label for="full time">Full-time</label>
+    <br><br>
+    <input type="radio" id="part time" name="availability">
+    <br>
+    <label for="part time">Part-time</label>
+    <br>
+    <label for="comment">Additional Comments:</label>
+    <br>
+    <textarea name="comments" id="comment" rows="10" cols="50"></textarea>
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>

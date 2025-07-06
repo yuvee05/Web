@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid red;
+            width: 25%;
+            /* 25% of immediate parent */
+        }
+        .box2{
+            border: 2px solid red;
+            background-color: aqua;
+            height: 100vh;
+            /* 100% of viewport ki height */
+            width: 50vw;
+            /* 50% of viewport ki width */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Welcome to our website
+    </div>
+    <div class="box2">
+        Welcome Welcome
+    </div>
+</body>
+</html>
