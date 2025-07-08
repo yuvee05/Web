@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+            transition-property: width;
+            transition-duration: 4s;
+            /* transition-delay: 1s; */
+            transition-timing-function: linear;
+        }
+        .box1:hover{
+            width: 1200px;
+            background-color: blue;
+            
+        }
+        .box2{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+            transition-property: all;
+            transition-duration: 4s;
+            /* transition-delay: 1s; */
+            transition-timing-function: linear;
+            /* same animation wlle cases use ho jayenge */
+        }
+        .box2:hover{
+            width: 1200px;
+            background-color: blue;
+            height: 900px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+</body>
+</html>
