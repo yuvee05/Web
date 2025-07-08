@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box1{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1);
+            /* ease: Slow start, then fast, then end slowly(default)
+            linear: Same speed from start to end
+            ease-in: Slow start
+            ease-in-out: Slow start and end
+            cubic-bezier(n,n,n,n): Lets you define your own values in a cubic-bezier function */
+            animation-direction: alternate;
+        }
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+        .box3{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            /* @keyframes duration | easing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name */
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+
+           
+
+
+        }
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="box3">
+
+        </div>
+    </div>
+</body>
+</html>
