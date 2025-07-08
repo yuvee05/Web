@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+
+            /* box-shadow: 10px 15px brown;
+            box-shadow: -10px -15px brown; */
+            /* box-shadow: x-offset y-offset color; */
+
+            /* box-shadow: 10px 15px 20px brown; */
+            /* box-shadow: x-offset y-offset blur-radius color; */
+
+            /* box-shadow: 10px 15px 5px 40px brown; */
+            /* box-shadow: x-offset y-offset blur-radius spread-radius color; */
+
+            /* box-shadow: inset 10px 15px brown; */
+
+            /* box-shadow: 10px 15px red,15px 8px green; */
+
+        }
+        #head1{
+            /* text-shadow: 2px 3px 1px white; */
+            /* text-shadow: yellow 12px 13px 2px; */
+            /* text-shadow: white 12px 13px; */
+            text-shadow: 12px 13px;
+            /* by default black */
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">
+            <img src="ChatGPT-Logo.jpg" alt="ChatGPT" width="100px" height="75px">
+            <h2 id="head1">Welcome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim quam id atque. Officiis accusamus, error fugit recusandae nesciunt quidem quos nobis, expedita sit suscipit, voluptatibus dolor! Magnam ea, sunt quisquam explicabo aut ad possimus nobis recusandae veniam nostrum debitis libero. Veniam debitis unde odio, corporis  nemo neque eveniet vitae!</p>
+        </div>
+    </div>
 </body>
 </html>
