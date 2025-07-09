@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+   background: #0f266b;
+background: linear-gradient(90deg, rgba(15, 38, 107, 1) 0%, rgba(0, 1, 5, 1) 100%, rgba(6, 6, 56, 1) 66%);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+    color: azure;
+    padding: 10px;
+}
+#navList{
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+    
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#item1,#item2{
+    display: flex;
+    width: 50vw;
+}
+#recipes{
+    width: 50vw;
+    height: 110vh;
+    background-color: azure;
+    box-shadow: 0px 0px 30px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#item1{
+    /* padding: 20px; */
+    margin: 50px;
+    margin-top: 0px;
+}
+img{
+    height: 280px;
+    width: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 1s linear;
+}
+.dish{
+    margin: 20px;
+    margin-left: 40px;
+}
+.Ingredients{
+    margin-top: 20px;
+}
+.Recipe{
+    margin-top: 15px;
+}
+footer{
+    background: #0f266b;
+    background: linear-gradient(90deg, rgba(15, 38, 107, 1) 0%, rgba(0, 1, 5, 1) 100%, rgba(6, 6, 56, 1) 66%);
+    height: 30px;
+    font-size: 20px;
+     color: azure;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+.rightbox{
+    position: relative;
+} 
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.573);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    width: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+span{
+    color: white;
+}
+.rightbox:hover .overlay{
+    opacity:1 ;
+}
