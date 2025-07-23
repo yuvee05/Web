@@ -40,22 +40,26 @@ body {
     }
 
     .header {
-        grid-column-start: 1;
-        grid-column-end: 4;
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+        grid-column: 1/4;
     }
 
     .footer {
-        grid-column-start: 1;
-        grid-column-end: 4;
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+        grid-column: 1/4;
     }
 
     .sidebar {
-        grid-row-start: 2;
-        grid-row-end: 4;
+        /* grid-row-start: 2;
+        grid-row-end: 4; */
+        grid-row: 2/4;
     }
 
     .content1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
+        /* grid-column-start: 2;
+        grid-column-end: 4; */
+        grid-column: 2/4;
     }
 }
